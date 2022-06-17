@@ -313,3 +313,116 @@ body {
 .hover-effect-8:hover span::after {
     height: 100%;
 }
+
+/* Hover Effect 9 */
+.hover-effect-9 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+}
+
+.hover-effect-9 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 2px;
+    background-color: #434343;
+    transition: height 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+.hover-effect-9 span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0%;
+    width: 2px;
+    background-color: #434343;
+    transition: height 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+
+.hover-effect-9::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #434343;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.hover-effect-9::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #434343;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.hover-effect-9:hover::before {
+    transform: translateX(0);
+    transition-delay: 0s;
+}
+
+.hover-effect-9:hover::after {
+    transform: translateX(0);
+    transition-delay: 1s;
+}
+
+.hover-effect-9:hover span::before {
+    height: 100%;
+    transition-delay: 1.5s;
+}
+
+.hover-effect-9:hover span::after {
+    height: 100%;
+    transition-delay: 0.5s;
+}
+
+/* Hover Effect 10 */
+.hover-effect-10 {
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.hover-effect-10::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #343434;
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover-effect-10::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #343434;
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover-effect-10:hover::before, 
+.hover-effect-10:hover::after {
+    transform: translateX(-50%) scale(1);
+}
